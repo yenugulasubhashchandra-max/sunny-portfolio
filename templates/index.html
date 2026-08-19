@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sunny's Portfolio</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Sunny</div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="hero">
+        <section class="hero">
+
+            <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Sunny" class="profile-img">
+
+            <h1>Hi, I'm <span>Sunny</span> 👋</h1>
+
+            <p>
+                Python Developer | AI Enthusiast | Web Developer
+            </p>
+
+            <a href="#projects" class="btn">View My Work</a>
+
+            <div class="social-links">
+
+                <a href="https://github.com/" target="_blank">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/" target="_blank">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </section>
+
+    </section>
+    <section class="about" id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am Sunny, a B.Tech student interested in Python,
+            Artificial Intelligence and Web Development.
+            I enjoy learning new technologies and building projects.
+        </p>
+    </section>
+
+
+    <section class="skills" id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skill-box">
+            <div>🐍 Python</div>
+            <div>🌐 HTML</div>
+            <div>🎨 CSS</div>
+            <div>🤖 Artificial Intelligence</div>
+        </div>
+    </section>
+
+
+    <section class="projects" id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="project-box">
+
+            <div class="project">
+                <h3>🐍 Python Chatbot</h3>
+
+                <p>
+                    A simple chatbot project built using Python.
+                </p>
+
+                <a href="#" class="project-btn">
+                    View Project
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>🌐 Portfolio Website</h3>
+
+                <p>
+                    My personal portfolio built using Flask,
+                    HTML and CSS.
+                </p>
+
+                <a href="#" class="project-btn">
+                    View Project
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>🤖 AI Project</h3>
+
+                <p>
+                    An AI-based project that I am learning
+                    and developing.
+                </p>
+
+                <a href="#" class="project-btn">
+                    View Project
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Me</h2>
+
+        <form action="/contact" method="POST">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 Sunny. All Rights Reserved.</p>
+
+        <p>
+            Built with Python, Flask, HTML & CSS 🐍
+        </p>
+    </footer>
+</body>
+
+</html>
