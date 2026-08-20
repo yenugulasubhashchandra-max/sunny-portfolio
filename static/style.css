@@ -619,3 +619,169 @@ button {
         font-size: 16px;
     }
 }
+
+/* ===== ABOUT SECTION ===== */
+
+.about {
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.section-label {
+    color: #38bdf8;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.about h2 {
+    font-size: 40px;
+    margin: 10px 0 25px;
+}
+
+.about-content>p:not(.section-label) {
+    color: #cbd5e1;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.about-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.about-highlights div {
+    min-width: 180px;
+    padding: 20px;
+    background: #1e293b;
+    border-radius: 12px;
+}
+
+.about-highlights strong {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.about-highlights span {
+    color: #e2e8f0;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .about {
+        padding: 70px 20px;
+    }
+
+    .about h2 {
+        font-size: 32px;
+    }
+
+    .about-highlights {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-highlights div {
+        width: 100%;
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+}
+
+/* ===== DARK ABOUT SECTION ===== */
+
+.about {
+    background: #111827;
+    color: white;
+    padding: 100px 20px;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.section-label {
+    color: #38bdf8;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.about h2 {
+    color: white;
+    font-size: 42px;
+    margin: 10px 0 30px;
+}
+
+.about-content>p:not(.section-label) {
+    color: #cbd5e1;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.about-highlights {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-highlights div {
+    width: 220px;
+    padding: 25px 20px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.about-highlights div:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+}
+
+.about-highlights strong {
+    display: block;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.about-highlights span {
+    color: #e2e8f0;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .about {
+        padding: 70px 20px;
+    }
+
+    .about h2 {
+        font-size: 34px;
+    }
+
+    .about-highlights {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-highlights div {
+        width: 100%;
+        max-width: 320px;
+        box-sizing: border-box;
+    }
+}
