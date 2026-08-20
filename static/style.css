@@ -353,3 +353,158 @@ nav ul li a:hover {
     transform: translateY(-3px);
     background-color: #111827;
 }
+
+/* ===== MODERN PORTFOLIO IMPROVEMENTS ===== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+/* Buttons */
+button,
+.btn {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Project cards */
+.project {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project:hover {
+    transform: translateY(-6px);
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .projects,
+    .project-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    form {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    input,
+    textarea,
+    button {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* ===== PROFESSIONAL LOOK ===== */
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+nav {
+    background: #111827;
+    padding: 18px 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.project {
+    background: #1e293b;
+    border-radius: 16px;
+    padding: 25px;
+    margin: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.project h3 {
+    color: #38bdf8;
+}
+
+input,
+textarea {
+    background: #1e293b;
+    color: white;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+button {
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+}
