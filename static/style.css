@@ -100,18 +100,23 @@ nav ul li a {
 }
 
 .skill-box {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    flex-wrap: wrap;
+    max-width: 700px;
+    margin: 30px auto 0;
 }
 
-.skill-box div {
+.skill-box .skill {
     background-color: white;
-    padding: 20px 30px;
-    border-radius: 10px;
+    color: #111827;
+    padding: 25px 20px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-
 
 /* Projects Section */
 
@@ -507,4 +512,16 @@ button {
     padding: 12px 24px;
     border-radius: 8px;
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .skill-box {
+        grid-template-columns: 1fr;
+        margin: 20px auto 0;
+    }
+
+    .skill-box .skill {
+        padding: 20px;
+        font-size: 18px;
+    }
 }
