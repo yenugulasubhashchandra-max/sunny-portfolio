@@ -25,17 +25,33 @@
 
 
     <section class="hero">
-        <section class="hero">
 
-            <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Sunny" class="profile-img">
+        <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Sunny" class="profile-img">
 
-            <h1>Hi, I'm <span>Sunny</span> 👋</h1>
+        <div class="hero-content">
 
-            <p>
-                Python Developer | AI Enthusiast | Web Developer
+            <p class="hero-small-text">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Hi, I'm <span>Subhash</span> 👋</h1>
+
+            <h2>Python Developer | AI Enthusiast | Web Developer</h2>
+
+            <p class="hero-description">
+                I love building creative websites, Python projects,
+                and exploring Artificial Intelligence.
             </p>
 
-            <a href="#projects" class="btn">View My Work</a>
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn">
+                    View My Work
+                </a>
+
+                <a href="#contact" class="btn-outline">
+                    Contact Me
+                </a>
+
+            </div>
 
             <div class="social-links">
 
@@ -49,9 +65,11 @@
 
             </div>
 
-        </section>
+        </div>
 
     </section>
+
+
     <section class="about" id="about">
         <h2>About Me</h2>
 
